@@ -6,5 +6,6 @@
 .gitattributes  export-ignore
 
 # Source files
+Dockerfile      text
 *.md            text diff=markdown
 *.py            text diff=python
