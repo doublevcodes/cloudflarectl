@@ -1,6 +1,5 @@
 import typer
 
-
 user = typer.Typer(name="user")
 
 
