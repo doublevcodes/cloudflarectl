@@ -1,0 +1,29 @@
+name: Lint
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  lint:
+    name: Lint Python code
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+        
+      - name: Setup Python
+        uses: actions/setup-python@v2
+        with:
+            python-version: 3.9.x
+
+      - name: Lint with Black
+        uses: psf/black@stable
+        with:
+            options: --check --diff --verbose
+
+      - name: Lint with isort
+        uses: isort/isort-action@master
+        
