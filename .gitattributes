@@ -1,0 +1,10 @@
+*               text=auto
+
+# Git specific files
+.gitignore      text
+.gitignore      export-ignore
+.gitattributes  export-ignore
+
+# Source files
+*.md            text diff=markdown
+*.py            text diff=python
