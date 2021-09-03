@@ -27,8 +27,10 @@ jobs:
         run: python3 -m poetry install
       
       - name: Build and release package
-        run: python3 -m poetry publish --build --username ${{ secrets.PYPI_USERNAME }} --password ${{ secrets.PYPI_PASSWORD }}
-
+        env:
+          PYPI_USER: ${{ secrets.PYPI_USERNAME }}
+          PYPI_PSWD: ${{ secrets.PYPI_PASSWORD }}
+        run: python3 -m poetry publish --build --username $PYPI_USER --password $PYPI_PSWD
   ghcr:
     name: Publish to GHCR
     runs-on: ubuntu-latest
