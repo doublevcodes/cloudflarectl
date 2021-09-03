@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "cloudctl"
+name = "cloudflarectl"
 version = "0.1.0"
 description = "Cloudflare interaction in a black box!"
 license = "MIT"
