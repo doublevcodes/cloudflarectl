@@ -1,4 +1,4 @@
-from cloudflare_cli.cli import CloudflareCLI
+from cloudctl.cli import CloudflareCLI
 
 APP_NAME: str = "Cloudflare CLI"
 COMMANDS_DIRECTORY: str = "commands"
