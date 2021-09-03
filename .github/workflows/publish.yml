@@ -1,0 +1,26 @@
+name: Publish to PyPI
+
+on:
+  release:
+    types:
+      - published
+
+jobs:
+  publish:
+    name: Publish to PyPI
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+        
+      - name: Setup Python
+        uses: actions/setup-python@v2
+        
+      - name: Install poetry
+        run: python3 -m pip install poetry
+        
+      - name: Install dependencies
+        run: python3 -m poetry install
+      
+      - name: Build and release package
+        run: python3 -m poetry publish --build --username ${{ secrets.PYPI_USERNAME }} --password ${{ secrets.PYPI_PASSWORD }}
