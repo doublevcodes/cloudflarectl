@@ -28,9 +28,10 @@ jobs:
       
       - name: Build and release package
         env:
-          PYPI_USER: ${{ secrets.PYPI_USERNAME }}
-          PYPI_PSWD: ${{ secrets.PYPI_PASSWORD }}
-        run: python3 -m poetry publish --build --username $PYPI_USER --password $PYPI_PSWD
+          PYPI_TOKEN: ${{ secrets.PYPI_TOKEN }}
+        run: |
+          python3 -m poetry config pypi-token.pypi $PYPI_TOKEN 
+          python3 -m poetry publish --build
   ghcr:
     name: Publish to GHCR
     runs-on: ubuntu-latest
