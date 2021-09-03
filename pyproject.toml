@@ -1,0 +1,40 @@
+[tool.poetry]
+name = "cloudflare-cli"
+version = "0.1.0"
+description = "Cloudflare interaction in a black box!"
+license = "MIT"
+authors = ["Vivaan Verma <vivaan.verma@gmail.com>"]
+maintainers = ["Vivaan Verma <vivaan.verma@gmail.com>"]
+readme = "README.md"
+keywords = [
+    "CLI",
+    "Cloudflare",
+    "Terminal"
+]
+classifiers = [
+    "Development Status :: 2 - Pre-Alpha",
+    "Environment :: Console",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3.9",
+    "Topic :: Terminals"
+]
+
+[tool.poetry.scripts]
+cloudflare = "cloudflare_cli:CLI"
+
+[tool.poetry.dependencies]
+orjson = "~=3.6"
+pydantic = "~=1.8"
+python = "~=3.9"
+requests = "~=2.26"
+typer = {extras = ["all"], version = "~=0.4"}
+
+[tool.poetry.dev-dependencies]
+pytest = "~=5.2"
+black = "^21.8b0"
+isort = "~=5.9"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
