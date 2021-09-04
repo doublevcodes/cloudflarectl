@@ -1,0 +1,15 @@
+# Command line interface
+cloudflarectl/cli/**/*     @doublevcodes
+
+# API interaction
+cloudflarectl/core/**/*    @doublevcodes
+
+# Docker, CI and tooling
+pyproject.toml             @doublevcodes
+poetry.lock                @doublevcodes
+Dockerfile                 @doublevcodes
+.github/workflows/*        @doublevcodes
+.git*                      @doublevcodes
+
+# Community
+*.md                       @doublevcodes         
