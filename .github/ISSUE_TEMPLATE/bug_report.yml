@@ -1,0 +1,36 @@
+name: Bug Report
+title: "[BUG]: <insert title here>"
+description: The processes of thy cloudflarectl installation seemeth to be disturbed
+labels:
+  - "Bug"
+assignees:
+  - "doublevcodes"
+body:
+  - type: markdown
+    attributes:
+      value: We thank thee for utilising one's time to complete here bug report!
+  - type: textarea
+    attributes:
+      label: What occurred that thou disliked?
+      description: Also dare say, what didst thee expect to happeneth?
+      placeholder: Pray dear, dictate what thy sees
+    validations:
+      required: true
+  - type: input
+    attributes:
+      label: What version of cloudflarectl are you using?
+      description: Here goes thine cloudflarectl version
+      placeholder: vX.Y.Z
+  - type: checkbox
+    attributes:
+      label: How didst thee obtain cloudflarectl
+      options:
+        - label: Through the **Docker** image
+        - label: Downloaded utilising sacred `pip`
+  - type: dropdown
+    attributes:
+      label: Thine computational machine's operating system
+      options:
+        - Windows
+        - MacOS
+        - Linux
