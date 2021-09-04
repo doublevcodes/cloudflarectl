@@ -31,7 +31,7 @@ requests = "~=2.26"
 typer = {extras = ["all"], version = "~=0.4"}
 
 [tool.poetry.dev-dependencies]
-pytest = "~=5.2"
+pytest = "~=6.2"
 black = "^21.8b0"
 isort = "~=5.9"
 
