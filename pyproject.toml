@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "cloudflarectl"
-version = "0.1.0"
+version = "0.0.1"
 description = "Cloudflare interaction in a black box!"
 license = "MIT"
 authors = ["Vivaan Verma <vivaan.verma@gmail.com>"]
