@@ -21,7 +21,7 @@ body:
       label: What version of cloudflarectl are you using?
       description: Here goes thine cloudflarectl version
       placeholder: vX.Y.Z
-  - type: checkbox
+  - type: checkboxes
     attributes:
       label: How didst thee obtain cloudflarectl
       options:
