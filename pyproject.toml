@@ -33,7 +33,7 @@ typer = {extras = ["all"], version = "~=0.4"}
 [tool.poetry.dev-dependencies]
 pytest = "~=6.2"
 black = "^21.9b0"
-isort = "~=5.9"
+isort = "~=5.10"
 
 [tool.isort]
 profile = "black"
